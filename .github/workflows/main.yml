@@ -35,7 +35,13 @@ jobs:
         if: failure()
         with:
             severity: error
-            details: Build Failed!
+            username: GitHub
+            color: '#e12a2a'
+            avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+            description: Build failed :(
+            details: Build failed, product is borkke :(
+            footer: Not awesome
+            text: Build failed!
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
   tag_release:
     needs: [simple_deployment_pipeline]
