@@ -72,5 +72,10 @@ jobs:
         if: success()
         with:
               severity: info
-              details: Deploy Succeeded!
+              username: GitHub
+              color: '#00ff00'
+              avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+              details: Deploy Succeeded
+              footer: Awesome!
+              text: Pokedex is deployed!
               webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
